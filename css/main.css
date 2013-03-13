@@ -1,0 +1,264 @@
+/* 
+    Document   : main
+    Created on : 05/03/2013, 10:22:15
+    Author     : jose
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+
+
+f{}
+body{
+    /* background-color:#FFFEFA;*/
+    /*color:#333333;*/
+    /* font-family:'Ubuntu Condensed' ;*/
+    /*font-family:'Ubuntu Medium' ;*/
+    font-family: Nimbus Sans L, Arial, Verdana;
+    /* font-family: 'Dejavu Sans',Arial,Helvetica;*/
+    font-size: smaller;
+    margin:0px;
+    padding:2% 3%;
+    color:#333;
+
+}
+a{
+    text-decoration: none;
+
+    color:inherit;
+}
+a:hover{
+    font-weight: bold;
+    color:#333;   
+}
+aside{
+    /*border-left:1px black dotted;*/
+    border-left:1px #51A5CD dashed;
+}
+
+article .article-text{
+    /*padding:0.5em;*/
+    margin:0 ;
+    clear:both;
+    padding-top: 0.5em;
+}
+
+
+article img{
+    width: 20%;
+    margin:0;
+    margin-right: 0.5em;
+}
+article p{
+    text-align: justify; 
+}
+
+
+footer{
+    /*border: 1px #51A5CD solid;*/
+    border-top:1px #51A5CD solid;
+    font-size: smaller;                
+    padding: .5%;
+    text-align: center;
+    clear:both;
+}
+footer a{
+    color:#51A5CD;
+}
+header{
+    background: /*url(../img/dark-grey-tile1.png)*/ #51A5CD repeat;   
+    color: #ffffff;
+    padding: 0.25em 0.5em;
+}  
+header h1{
+    padding: 0px;
+    margin:0px;
+}
+header #eslogan{
+    padding: 0px;
+    margin:0px;
+    font-size: medium;
+}
+header p{
+    padding: 0px;
+    margin:0px;
+}
+
+nav{
+
+    border-bottom: 1px solid #51A5CD;
+
+    background-color: white;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+
+
+}
+nav ul{
+    margin:0px;
+    list-style: none;        
+    padding:0.25%;            
+
+}
+nav ul li{
+    border-right: 1px black dotted;
+
+    display: inline; 
+
+    margin:0px;
+    padding:0%; 
+
+}
+nav ul li a{
+    margin:.25%;
+    padding:2%;
+    text-decoration: none;
+    text-align: center;                
+
+}
+
+ul{
+    /*padding: 0;*/
+    margin: 0;
+    list-style: none;
+}
+
+section{
+    padding-bottom: 1em;
+}
+
+
+#content{
+    /*border:1px #51A5CD solid;*/
+
+
+    padding: 1% 0%;
+
+}
+
+/*#left,#right{
+    width: 49%;
+    display: inline-block;
+    
+}
+#left{
+   
+}
+#right{
+    margin-left: 1.5em;
+}*/
+#list-comments li{
+
+
+    margin:0%;
+
+
+    /*    -webkit-border-radius: 5px;
+    
+        border-radius: 5px;*/
+
+}
+
+
+#threads{
+
+}                           
+#threads-list, #categories-list{
+    list-style: none;
+    padding:0px;
+    margin:0px;           
+}            
+
+#wrapper{
+    padding: 0%;
+    /*border:1px #51A5CD solid;*/
+    /*border:1px black solid;*/
+}
+
+
+.article-header{
+    background:none;
+    background-color: #51A5CD;
+    border:none;
+    color:#ffffff;
+    font-weight: bold;
+
+}
+
+.article-footer{
+    border:none;
+    clear:both;
+    text-align: right;
+}
+.thread-item:hover, .categories-item:hover{
+    /* background-color: black;*/
+    /*font-weight: bold;             */
+
+
+}            
+
+.section-header{
+    background: none;
+    background-color: #51A5CD;
+    font-weight: bold;
+
+}
+
+.td-center{
+    text-align: center;
+}
+.td-subject{
+    width: 70%;
+}
+.thread-item/*,.categories-item*/{
+    /*border-bottom: 1px #51A5CD solid;*/
+    border-bottom: 1px #ddd solid;
+    padding:0.25em 0 0.25em 0;
+}
+.topicTable{
+    /* width: 100%;                         */
+
+}   
+
+.statics{
+    text-align: right;color: black;font-weight: bold;
+}
+
+
+.secundary-section-header{
+
+    background: none;
+    border-top: 1px dashed #333;
+    /*border-bottom: 1px dashed #333;*/
+    color:#881515;
+    font-weight: bold;
+    padding: 0.1em 0.5em ;
+    margin-bottom: 0.1em;
+}
+.comment-header{
+    /*background: #333;     */
+    background:none;
+    border-top:  1px dashed #333;
+    color:#881515;
+    font-weight: bold;
+
+    padding: 0.1em  ;
+}
+.header-table{
+    border:1px solid black;
+    width: 100%;
+    padding:0;
+    margin:0;    
+}
+.header-table .right{
+    text-align: right;
+    border:1px solid red;
+
+}
+.header-table .left{
+    border:1px solid red;
+    width: 70%;
+
+}
