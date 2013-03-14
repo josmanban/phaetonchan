@@ -22,7 +22,7 @@ class CommentManager {
             'idTopic' => $idTopic,
             'idComment' => $idComment
         );
-        $id=CommentAbm::addComment($parameters);
+        $id = CommentAbm::addComment($parameters);
         return $id;
     }
 
@@ -51,41 +51,19 @@ class CommentManager {
         return $allComments;
     }
 
-    public static function getCommentsByTopicIdPaginated($idTopic, $offset, $limit) {
-
-        $parameters = array('idTopic' => $idTopic, 'idComment' => -1, 'offset' => $offset, 'limit' => $limit);
-        $fatherComments = CommentAbm::listComments($parameters);
-        
-        $allComments = array();
-        foreach ($fatherComments as $fatherComment) {
-            $family = array();
-            $sons = CommentAbm::listComments(array('idTopic' => $idTopic, 'idComment' => $fatherComment->getId()));
-
-            array_push($family, $fatherComment);
-            array_push($family, $sons);
-            array_push($allComments, $family);
-        }
-        $numComments = CommentAbm::numComments(array('idTopic' => $idTopic));
-        
-
-        return array($allComments, $numComments);
-    }
-
-    public static function getCommentsByFatherComment($idComment) {
-        return CommentAbm::listComments(array('idComment' => $idComment));
+    public static function getCommentsByFatherCommentId($idComment,$idTopic, $offset, $limit) {
+        return CommentAbm::listComments(array('idComment' => $idComment,'idTopic'=>$idTopic,'offset' => $offset, 'limit' => $limit));
     }
 
     public static function getAllComments() {
         return CommentAbm::listComments(array());
     }
-    
-    
-    public static function countCommentsPerIdTopic($idTopic){
-        return CommentAbm::numComments(array('idTopic'=>$idTopic));
-        
+
+    public static function countCommentsPerIdTopic($idTopic) {
+        return CommentAbm::numComments(array('idTopic' => $idTopic));
     }
-    
-    public static function countAllComments(){
+
+    public static function countAllComments() {
         return CommentAbm::numComments(array());
     }
 

@@ -11,6 +11,38 @@
 //
 //var_dump($array2);
 
-echo $_SERVER['REMOTE_ADDR'];
+//echo $_SERVER['REMOTE_ADDR'];
+include_once 'commons/manager/CommentManager.php'; 
+include_once 'commons/class/Comment.php';
+
+showComments(-1,0,30);
+
+//function showComments($idComment,$indicator){
+//    $comments=  CommentManager::getCommentsByFatherComment($idComment);
+//    foreach ($comments as $comment){
+//        echo '<br>'.$indicator.$comment->toString();        
+//        $idComment=$comment->getId();
+//        showComments($idComment,$indicator.'-');
+//    }
+//    
+//
+//}
+
+function showComments($idComment,$offset,$limit){
+    echo '<ul>';
+    $comments=  CommentManager::getCommentsByFatherCommentId($idComment,$offset,$limit);
+    foreach ($comments as $comment){
+        echo '<li>';        
+        echo $comment->toString();        
+        echo '</li>';
+        $idComment=$comment->getId();
+        showComments($idComment,null,null);
+    }
+    echo '</ul>';    
+    }
+
+
+
+
 
 ?>

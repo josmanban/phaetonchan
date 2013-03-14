@@ -11,6 +11,7 @@ define('PATH_CLASS','commons/class/');
 
 
 
+
 error_reporting(E_ALL | E_STRICT);
 
 ?>

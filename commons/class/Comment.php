@@ -123,7 +123,8 @@ class Comment {
     }
 
     public function toString() {
-        return 'name: ' . $this->name . '\nid: ' . $this->id . '\nsubmit: ' . $this->subject;
+        return 'name: ' . $this->name . '<br>id: ' . $this->id . '<br>submit: ' . $this->subject.
+            '<br>message: '.$this->comment;
     }
 
 }

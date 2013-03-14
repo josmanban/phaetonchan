@@ -1,5 +1,9 @@
 <?php
+
 $id = $_GET['id'];
+
+
+
 $numPaginas = ceil($numComments / $limit);
 ?>
 <? for ($i = 1; $i <= $numPaginas; $i++): ?>

@@ -26,9 +26,9 @@ function validateFields($name,$comment,$subject,$img) {
     if (empty($name)) {
         $errorMessage = $errorMessage . '<br>NickName vacio.';
     }
-     if (empty($subject)) {
-        $errorMessage = $errorMessage . '<br>Titulo vacio.';
-    }
+//     if (empty($subject)) {
+//        $errorMessage = $errorMessage . '<br>Titulo vacio.';
+//    }
     if (empty($comment)) {
         $errorMessage = $errorMessage . '<br>Contenido vacio.';
     }

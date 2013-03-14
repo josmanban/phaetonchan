@@ -6,7 +6,6 @@
         Purpose of the stylesheet follows.
 */
 
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
 
 
@@ -15,11 +14,11 @@ f{}
 body{
    
     font-family: Nimbus Sans L, Arial, Verdana;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: #000000;
     font-size: smaller;
     margin:0px;
     padding:2% 3%;
-    color:#333;
+    color:#00CC00;
 
 }
 a{
@@ -29,7 +28,7 @@ a{
 }
 a:hover{
     font-weight: bold;
-    color:#333;   
+    color:#00CC00;   
 }
 aside{
     /*border-left:1px black dotted;*/
@@ -63,12 +62,13 @@ footer{
     clear:both;
 }
 footer a{
-    color:#202020;
+    color:#00CC00;
 }
 header{
-    background: /*url(../img/dark-grey-tile1.png)*/ #202020 repeat;   
-    color: #ffffff;
+    /*background: /*url(../img/dark-grey-tile1.png) #202020 repeat;   */
+    color: #00CC00;
     padding: 0.25em 0.5em;
+    border-bottom: 1px #00CC00 dashed;
 }  
 header h1{
     padding: 0px;
@@ -86,8 +86,9 @@ header p{
 
 nav{
 
-    border-bottom: 1px solid #202020;
+    border-bottom: 1px solid #00CC00;
 
+    
     font-weight: bold;
     /*text-transform: uppercase;*/
 
@@ -158,8 +159,8 @@ section{
 
 }
 #list-comments .comment{
-   /* border-left:1px #333 dashed;
-    border-top: 1px #333 dashed;
+   /* border-left:1px #00CC00 dashed;
+    border-top: 1px #00CC00 dashed;
     padding: 1em;
     margin:0.5em;*/
     
@@ -188,9 +189,9 @@ section{
     /*background-color: #202020;
     border:none;
     color:#ffffff;*/
-    color:#202020;
-    border-bottom: 1px #202020 dashed;
-    border-top: 1px #202020 dashed;
+    color:inherit;
+    border-bottom: 1px #00CC00 dashed;
+    border-top: 1px #00CC00 dashed;
     
     font-weight: bold;
 
@@ -209,9 +210,9 @@ section{
 }          
 
 .comment-header{
-    /*background: #333;     */
+    /*background: #00CC00;     */
     background:none;
-    border-top:  1px dotted #333;
+    border-top:  1px dotted #00CC00;
     color:#881515;
     font-weight: bold;
 
@@ -241,10 +242,6 @@ section{
 
 }*/
 
-.linkFooter{
-    color:#00CC00;
-}
-
 .td-center{
     text-align: center;
 }
@@ -253,7 +250,7 @@ section{
 }
 .thread-item/*,.categories-item*/{
     /*border-bottom: 1px #202020 solid;*/
-    border-bottom: 1px #333 solid;
+    border-bottom: 1px #00CC00 solid;
     padding:0.5em 0;
 }
 .topicTable{
@@ -272,8 +269,8 @@ section{
 .secundary-section-header{
 
     background: none;
-    border-top: 1px dashed #333;
-    /*border-bottom: 1px dashed #333;*/
+    border-top: 1px dashed #00CC00;
+    /*border-bottom: 1px dashed #00CC00;*/
     color:#881515;
     font-weight: bold;
     padding: 0.1em 0.5em ;

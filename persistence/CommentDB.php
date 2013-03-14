@@ -130,9 +130,6 @@ class CommentDB {
             }
             /*             * ********************************* */
             $parameters = array('sql' => $sql, 'array' => $array);
-
-
-
             $stmt = $db->execute($parameters);
             if ($stmt) {
                 $rows = $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -144,8 +141,7 @@ class CommentDB {
             $sql = "SELECT SQL_CALC_FOUND_ROWS * FROM comment WHERE idComment=:idComment ORDER BY dateTime DESC";
             $array = array(':idComment' => $parameters['idComment']);
             /*             * *****for pagination************* */
-            if (isset($parameters['offset']) && $parameters['limit']) {
-                header('location: error.html.php?data=aa');
+            if (isset($parameters['offset']) && $parameters['limit']) {               
                 $array['offset'] = $parameters['offset'];
                 $array['limit'] = $parameters['limit'];
                 $sql = $sql . ' LIMIT :offset,:limit';
